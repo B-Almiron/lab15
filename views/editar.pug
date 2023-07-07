@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title Editar Dato
+  body
+    h1 Editar Dato
+    form(action=`/editar/${dato.id}` method="POST")
+      if error
+        p.error= error
+      label(for="columna1") Columna 1:
+      input(type="text" name="columna1" value=dato.columna1)
+      label(for="columna2") Columna 2:
+      input(type="text" name="columna2" value=dato.columna2)
+      label(for="columna3") Columna 3:
+      input(type="text" name="columna3" value=dato.columna3)
+      label(for="pelicula") Película:
+      input(type="text" name="pelicula" value=dato.pelicula)
+      
+      button(type="submit") Actualizar
+    a(href="/") Volver a la lista

@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title Datos Filtrados
+  body
+    h1 Datos Filtrados
+    table
+      thead
+        tr
+          th Nombre
+          th Edad
+          th Rol
+          th Película
+          th Tipo de Película
+      tbody
+        each dato in datos
+          tr
+            td= dato.nombre
+            td= dato.edad
+            td= dato.rol
+            td= dato.nombre_pelicula
+            td= dato.tipo_pelicula
